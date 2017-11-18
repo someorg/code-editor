@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="./res/css/style.css">
+    <script src="monaco-editor/min/vs/loader.js"></script>
+    <script src=./res/js/editor.js></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="row header" id="menuBar">
+            Language
+            <select id="languageSelector" optionType="language" onchange="selectorUpdate(this)"></select>
+            &nbsp;Theme
+            <select id="themeSelector" optionType="theme" onchange="selectorUpdate(this)"></select>
+            &nbsp;Keep Input
+            <input type="checkbox" id="storeInput" checked onclick="setStoreInput(this.checked)">
+            <span id="modeSwitch" onclick="swapMode(this)">Diff Mode</span>
+        </div>
+        <div class="row content editor_window" id="norm_editor"></div>
+        <div class="row content editor_window" id="diff_editor" style="display: none; height: 1%;"></div>
+    </div>
+</body>
+
+</html>

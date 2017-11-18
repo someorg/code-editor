@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+}
+
+.box .row.header {
+  flex: 0 1 auto;
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+}
+
+#menuBar {
+    background: #002b36;
+    color: #839496;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menuBar > select {
+    background: #002b36;
+    color: #839496;
+    border-color: #839496;
+    border-radius: 5%;
+    padding: 2px;
+}
+
+#modeSwitch {
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+#modeSwitch:hover {
+    color: #93a1a1;
+}
+
+.editor_window {
+    background: grey;
+    overflow: hidden;
+}
