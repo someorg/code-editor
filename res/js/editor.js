@@ -196,7 +196,7 @@ window.onload = function () {
         && document.cookie !== null
         && getCookie("storeInput") !== undefined
         && getCookie("storeInput") !== null) {
-        setStoreInput(Boolean(getCookie("storeInput")));
+        setStoreInput("true" == getCookie("storeInput"));
     }
 }
 
